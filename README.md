@@ -28,4 +28,6 @@ O projeto "Amigo Secreto" é uma aplicação web que permite adicionar nomes de 
 1. Clone o repositório para o seu ambiente local.
 2. Abra o arquivo `index.html` em um navegador web.
 
-    
+## Deploy
+
+Você pode acessar através do seguinte link: [Amigo Secreto](https://davi-d18.github.io/amigo-secreto/)
