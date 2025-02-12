@@ -21,7 +21,7 @@ export function adicionarAmigos (nome) {
 
 export function sortearAmigo () {
   if (amigosAdicionados.length === 0) {
-    alert('Adicione amigos para sortear');
+    exibirMensagemError(true, 'Adicione amigos para sortear');
     return;
   }
 
@@ -31,6 +31,8 @@ export function sortearAmigo () {
     const vencedor = Math.floor(Math.random() * amigosAdicionados.length);
     const sorteado = document.querySelector('#resultado');
     sorteado.textContent = amigosAdicionados[vencedor];
+
+    destacarAmigoSorteado(amigosAdicionados[vencedor]);
   }, tempoLoading)
 }
 
@@ -59,4 +61,19 @@ export function loading () {
     buttonSortear.style.backgroundColor =  "";
     iconButtonSortear.style.display = 'block';
   }, tempoLoading)
+}
+
+export function destacarAmigoSorteado(amigo) {
+  const amigos = document.querySelectorAll('#listaAmigos li');
+
+  amigos.forEach((amigoLi) => {
+    amigoLi.classList.remove('destacado');
+
+    if (amigoLi.textContent === amigo) {
+      amigoLi.classList.add('destacado');
+      return;
+    }
+
+    amigoLi.style.color = '';
+  })
 }

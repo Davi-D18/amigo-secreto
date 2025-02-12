@@ -130,18 +130,27 @@ ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
+    text-align: center;
     font-size: 18px;
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #0d930d;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 
+.destacado {
+    background-color: var(--color-button-hover);
+    font-weight: bold;
+    border-radius: 15px;
+    color: var(--color-white);
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 /* Botão de sortear título */
 .button-draw {
     display: flex;
