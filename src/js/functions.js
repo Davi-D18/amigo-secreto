@@ -54,7 +54,7 @@ export function loading () {
 
   iconButtonSortear.style.display = 'none';
   buttonSortear.style.backgroundColor =  "#b44821";
-  loading.style.display = 'block';
+  loading.style.display = 'inline-block';
 
   setTimeout(() => {
     loading.style.display = 'none';
